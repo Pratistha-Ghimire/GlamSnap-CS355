@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlamSnap</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Logout button sits at the top‑right corner -->
+  <button id="logoutButton" class="logout-btn">Logout</button>
+
+  <div class="container">
+    <h1>✨ Look of the Day ✨</h1>
+
+    <form id="lookForm">
+      <label for="photo">Upload your look:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
+
+      <label for="tags">Choose tags:</label>
+      <select id="tags" name="tags" multiple>
+        <option value="glam">Glam</option>
+        <option value="natural">Natural</option>
+        <option value="bold">Random</option>
+        <option value="casual">Casual</option>
+        <option value="evening">Evening</option>
+        <option value="daytime">OOTD</option>
+      </select>
+
+      <label for="notes">Makeup/Outfit Notes:</label>
+      <textarea id="notes" name="notes" placeholder="Describe your look..." rows="4"></textarea>
+
+      <button type="submit">Save Look</button>
+    </form>
+
+    <div id="preview">
+      <h2>📸 Preview</h2>
+      <div id="lookGrid"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>

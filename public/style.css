@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff0f5;
+    color: #4a4a4a;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(255, 192, 203, 0.4);
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #ff69b4;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="file"],
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ffc0cb;
+    border-radius: 8px;
+    background: #fffafc;
+    font-size: 16px;
+  }
+  
+  select {
+    height: 100px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  #preview {
+    margin-top: 40px;
+  }
+  
+  #lookGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .look-card {
+    border: 1px solid #ffd6e8;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff0f5;
+    text-align: center;
+  }
+  
+  .look-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 120px;
+    object-fit: cover;
+  }
+  
+  .look-card p {
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+  navigation-links {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.navigation-links a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  color: #ff1493;
+  text-decoration: underline;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background: #ff4d6d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+.logout-btn:hover {
+  opacity: 0.9;
+}
